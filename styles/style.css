@@ -3,3 +3,84 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+@font-face {
+  
+  font-family: IBM Plex Mono;
+  src: url(./fonts/IBMPlexMono-Regular.woff) format('woff');
+  src: url(./fonts/IBMPlexMono-Bold.woff) format('woff');
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-areas: repeat(auto-fit, min-content);
+  background-image: url(./images/cover-image-dark.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__theme-menu {
+  display: grid;
+  grid-column: 2/-1;
+  grid-row: 1/auto;
+  margin-block-start: 75px;
+  margin-inline-end: 10px;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: #FF0070;
+  border: none;
+  font-family: var(--font-family);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid #FF0070;
+}
+
+.header__theme-menu-button:focus {
+  border: none;
+  border-block-end: 1px solid #FF0070;
+}
+
+
+.header::before {
+  /*content: 'rec';
+  position: absolute;
+  margin-inline-start: calc(304/375*100%);
+  
+  margin-block-start: 10px;
+  display: flex;
+  text-transform: uppercase;
+  color: #FF0070;*/
+  content: '';
+  color: #fff;
+  margin-inline-start: 10px;
+  background-color: #FF0070;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: #FF0070;
+}
+
+.header::before::after {
+  content: '111111';
+  color: #fff;
+  margin-inline-start: 10px;
+  background-color: #FF0070;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: #FF0070;
+}
+  
+
+
+
