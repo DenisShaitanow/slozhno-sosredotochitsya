@@ -2,3 +2,20 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --background-image: url(../images/cover-image-dark.png);
+  --font-size-m: 18px;
+  --line-height-m: 18px;
+  --font-family: 'IBM Plex Mono', sans-serif;
+  --color-1: #FF0070;
+  --color-text: #F1B2CE;
+  --color-switch: #DB00FF;
+  --color-2: #000028;
+  --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --line-height-l: 23.4px;
+  --gap-m: 10px;
+  --gap-l: 20px;
+  --color-hover: #FF007066;
+  --color-shadow: #FF0070;
+}
