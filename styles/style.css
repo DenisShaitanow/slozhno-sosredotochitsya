@@ -3,9 +3,9 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
-  
+  background-attachment: fixed;
   min-inline-size: 375px;
-  background-color: var(--color-2); 
+  background-color: var(--color-2);
 }
 
 .title-decor {
@@ -160,7 +160,7 @@
   font-size: var(--font-size-m);
   line-height: 23.4px;
   font-weight: bold;
-  color: var(--color-2);
+  color: var(--color-list-title);
   text-align: left;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .main__link {
-  text-shadow: 2px 2px var(--color-1);
+  text-shadow: 2px 2px var(--color-link-shadow);
   text-decoration: none;
 }
 
@@ -240,7 +240,7 @@
 
 .content__list-item-title {
   display: block;
-  color: var(--color-2);
+  color: var(--color-list-title);
 
   font-family: var(--font-family);
   font-size: var(--font-size-m);
@@ -336,6 +336,7 @@
 
   .theme__switch__style {
     --font-size-switch: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 99px;
   }
 
   .theme__switch {
@@ -368,11 +369,6 @@
     inset-block-start: 980px;
     inset-block-end: 20px;
     inset-inline-start: 20px;
-  }
-
-  .theme__switch__style {
-    --font-size-switch: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    line-height: 99px;
   }
 
   .main__content {

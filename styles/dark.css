@@ -23,6 +23,8 @@
   --gap-l: 20px;
   --color-hover: #ff007066;
   --color-shadow: #ff0070;
+  --color-link-shadow: #ff0070;
+  --color-list-title: #353430;
 }
 
 .page.theme_dark .decor__element {
