@@ -16,11 +16,11 @@
   --color-1: #353430;
   --color-text: #353430;
   --color-switch: #ffc2e6;
-  --color-2: #353430;
+  --color-2: #FFF1F7;
   --line-height-l: 23.4px;
   --gap-m: 10px;
   --gap-l: 20px;
-  --color-hover: #353430;
+  --color-hover: #32312D66;
   --color-shadow: #ff8dcb;
   --title-color: #ff8dcb;
 }
@@ -48,11 +48,11 @@
     --color-1: #353430;
     --color-text: #353430;
     --color-switch: #ffc2e6;
-    --color-2: #353430;
+    --color-2: #FFF1F7;
     --line-height-l: 23.4px;
     --gap-m: 10px;
     --gap-l: 20px;
-    --color-hover: #353430;
+    --color-hover: #32312D66;
     --color-shadow: #ff8dcb;
   }
 
