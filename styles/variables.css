@@ -8,14 +8,14 @@
   --font-size-m: 18px;
   --line-height-m: 18px;
   --font-family: 'IBM Plex Mono', sans-serif;
-  --color-1: #FF0070;
-  --color-text: #F1B2CE;
-  --color-switch: #DB00FF;
+  --color-1: #ff0070;
+  --color-text: #f1b2ce;
+  --color-switch: #db00ff;
   --color-2: #000028;
   --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --line-height-l: 23.4px;
   --gap-m: 10px;
   --gap-l: 20px;
-  --color-hover: #FF007066;
-  --color-shadow: #FF0070;
+  --color-hover: #ff007066;
+  --color-shadow: #ff0070;
 }
