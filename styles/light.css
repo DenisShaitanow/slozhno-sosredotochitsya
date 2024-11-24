@@ -23,8 +23,8 @@
   --gap-l: 20px;
   --color-hover: #32312D66;
   --color-shadow: #ff8dcb;
-  --title-color: #ff8dcb;
   --color-link-shadow: #FF8DCB;
+  --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 :root.theme-light {
@@ -48,16 +48,17 @@
     --line-height-m: 18px;
     --font-family: 'IBM Plex Mono', sans-serif;
     --color-1: #353430;
-    --color-link-shadow: #FF8DCB;
     --color-text: #353430;
     --color-switch: #ffc2e6;
     --color-2: #FFF1F7;
+    --color-list-title: #353430;
     --line-height-l: 23.4px;
     --gap-m: 10px;
     --gap-l: 20px;
     --color-hover: #32312D66;
     --color-shadow: #ff8dcb;
-    --color-list-title: #353430;
+    --color-link-shadow: #FF8DCB;
+    --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .decor__element {

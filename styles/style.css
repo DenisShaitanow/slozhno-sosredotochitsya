@@ -5,6 +5,8 @@
 
   background-attachment: fixed;
   min-inline-size: 375px;
+  inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
+  box-sizing: border-box;
   background-color: var(--color-2);
 }
 
@@ -14,6 +16,7 @@
 
 .header {
   inline-size: 100%;
+  box-sizing: border-box;
   min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -94,17 +97,19 @@
 }
 
 .decor__element::after {
+  box-sizing: border-box;
   content: '';
   background-color: var(--color-1);
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 1px var(--color-1);
+  box-shadow: 0 0 4px 2px var(--color-1);
   margin-left: 10px;
   margin-top: 8px;
 }
 
 .header::before {
+  box-sizing: border-box;
   content: '';
   inline-size: 25px;
   block-size: 25px;
@@ -124,7 +129,6 @@
   border-bottom: 1px solid var(--color-1);
   border-left: 1px solid var(--color-1);
   position: absolute;
-  inset-block-start: 634px;
   inset-block-end: 10px;
   inset-inline-start: 10px;
 }
@@ -169,6 +173,7 @@
   grid-template-columns: 1fr;
   gap: 50px;
   inline-size: 100%;
+  box-sizing: border-box;
   padding-inline: 10px;
 }
 
@@ -194,6 +199,10 @@
   text-align: left;
 }
 
+.additional-title {
+  margin-block-end: 10px;
+}
+
 .main__link {
   text-shadow: 2px 2px var(--color-link-shadow);
   text-decoration: none;
@@ -202,7 +211,6 @@
 .main__link:hover {
   text-decoration: underline;
   text-decoration-skip-ink: 2px;
-  
 }
 
 .main__link:focus {
@@ -267,16 +275,17 @@
 
 .footer {
   inline-size: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   margin-block-start: 40px;
-
   align-items: center;
   position: relative;
 }
 
 .footer::after {
   content: '';
+  box-sizing: border-box;
   inline-size: 25px;
   block-size: 25px;
   background-color: transparent;
@@ -289,6 +298,7 @@
 
 .footer::before {
   content: '';
+  box-sizing: border-box;
   inline-size: 25px;
   block-size: 25px;
   background-color: transparent;
@@ -323,7 +333,7 @@
   }
 
   .decor__element {
-    inset-inline-end: 29px;
+    inset-inline-end: 30px;
     inset-block-start: 20px;
   }
 
@@ -412,6 +422,10 @@
     text-wrap: wrap;
   }
 
+  .additional-title {
+    margin-block-end: 10px;
+  }
+
   .one__column-list {
     grid-column: 1/-1;
   }
@@ -463,6 +477,7 @@
   }
 
   .footer {
+    inline-size: 100%;
     margin-block-start: 60px;
   }
 
