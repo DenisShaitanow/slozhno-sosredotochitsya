@@ -2,10 +2,12 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-  background-attachment: fixed;
   box-sizing: border-box;
-  background-color: var(--color-2);   /*inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
+  background-image: var(--background-image);
+  background-position: center;
+  background-attachment: fixed;
+   /*background-color: var(--color-2); */  
+   /*inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
 }
 
 .title-decor {
@@ -203,13 +205,14 @@
 }
 
 .main__link {
-  text-shadow: 2px 2px var(--color-link-shadow);
+  text-shadow: 1px 1px var(--color-link-shadow);
   text-decoration: none;
 }
 
 .main__link:hover {
   text-decoration: underline;
-  text-decoration-skip-ink: 2px;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 2px;
 }
 
 .main__link:focus {
