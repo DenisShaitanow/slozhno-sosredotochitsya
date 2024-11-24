@@ -4,10 +4,8 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
   background-attachment: fixed;
-  min-inline-size: 375px;
-  inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
   box-sizing: border-box;
-  background-color: var(--color-2);
+  background-color: var(--color-2);   /*inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
 }
 
 .title-decor {
