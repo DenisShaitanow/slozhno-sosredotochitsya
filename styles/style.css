@@ -267,7 +267,6 @@
   justify-items: center;
   align-items: center;
   margin-block-start: 40px;
-  align-items: center;
   position: relative;
 }
 
@@ -322,9 +321,6 @@
     inset-block-start: 20px;
   }
 
-  .header__theme-menu {
-  }
-
   .theme__switch__style {
     --font-size-switch: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
@@ -347,7 +343,6 @@
     border-bottom: 1px solid var(--color-1);
     border-left: 1px solid var(--color-1);
     position: absolute;
-    inset-block-start: 980px;
     inset-block-end: 20px;
     inset-inline-start: 20px;
   }
