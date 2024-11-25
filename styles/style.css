@@ -61,7 +61,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 2px solid var(--color-hover);
+  outline: 2px solid var(--color-hover);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -72,7 +72,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--color-1);
+  outline: 1px solid var(--color-1);
 }
 
 .decor__element {
@@ -323,8 +323,8 @@
 @media (width >= 768px) {
   .header {
     padding: 0;
-    padding-inline-end: 20px;
     padding-block: 20px;
+    padding-inline-end: 20px;
     grid-template-rows: 1fr min-content 1fr;
   }
 
@@ -493,6 +493,7 @@
 @media (width >= 1024px) {
   .header {
     grid-template-rows: 1fr min-content 1fr;
+    padding-inline-end: 0px;
     align-items: center;
     justify-items: flex-end;
   }
@@ -500,7 +501,6 @@
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
-    margin-block-start: 20px;
   }
 
   .header__theme-menu-list {
@@ -520,7 +520,8 @@
   .header__title {
     max-inline-size: 491px;
     block-size: fit-content;
-    margin-block-end: 20px;
+    margin-inline-end: 20px;
+   
   }
 
   .header::after {
