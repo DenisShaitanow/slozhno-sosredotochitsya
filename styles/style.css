@@ -3,12 +3,11 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   box-sizing: border-box;
+  background-color: var(--background-color);
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /*background-color: var(--color-2); */
-  /*inline-size: calc(100vw - 0.2px); /* Почему-то браузер добавляет 0,2 пикселя*/
 }
 
 .title-decor {
@@ -45,7 +44,7 @@
   box-sizing: border-box;
   display: block;
   background-color: transparent;
-  color: var(--color-1);
+  color: var(--color-button);
   border: none;
   font-family: var(--font-family);
   font-size: var(--font-size-m);
@@ -67,12 +66,12 @@
 .header__theme-menu-button:focus-visible {
   border: none;
   outline: none;
-  border-block-end: 2px solid var(--color-1);
+  border-block-end: 2px solid currentColor;
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--color-1);
+  outline: 1px solid currentColor;
 }
 
 .decor__element {
@@ -84,7 +83,7 @@
   font-family: var(--font-family);
   display: flex;
   text-transform: uppercase;
-  color: var(--color-1);
+  color: var(--color-button);
   font-size: var(--font-size-m);
   font-weight: 400;
   line-height: 1.5625rem;
@@ -94,36 +93,36 @@
 .decor__element::after {
   box-sizing: border-box;
   content: '';
-  background-color: var(--color-1);
+  background-color: var(--color-button);
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--color-1);
+  box-shadow: 0 0 4px 2px var(--color-button);
   margin-left: 10px;
   margin-top: 8px;
 }
 
-.header::before {
+.decorated-zone::before {
   box-sizing: border-box;
   content: '';
   inline-size: 25px;
   block-size: 25px;
   background-color: transparent;
-  border-top: 1px solid var(--color-1);
-  border-right: 1px solid var(--color-1);
+  border-top: 1px solid var(--color-button);
+  border-right: 1px solid var(--color-button);
   position: absolute;
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
 
-.header::after {
+.decorated-zone::after {
   box-sizing: border-box;
   content: '';
   inline-size: 25px;
   block-size: 25px;
   background-color: transparent;
-  border-bottom: 1px solid var(--color-1);
-  border-left: 1px solid var(--color-1);
+  border-bottom: 1px solid var(--color-button);
+  border-left: 1px solid var(--color-button);
   position: absolute;
   inset-block-end: 10px;
   inset-inline-start: 10px;
@@ -188,7 +187,7 @@
   font-size: var(--font-size-m);
   line-height: var(--line-height-l);
   font-weight: 700;
-  color: var(--color-1);
+  color: var(--color-button);
   text-align: left;
 }
 
@@ -202,11 +201,11 @@
 }
 
 .main__link:hover {
-  border-block-end: 1px solid var(--color-text);
+  border-block-end: 1px solid currentColor;
 }
 
 .main__link:focus {
-  outline: 1px solid var(--color-text);
+  outline: 1px solid currentColor;
 }
 
 .content__list {
@@ -273,39 +272,15 @@
 
 .footer {
   inline-size: 100%;
+  block-size: 100vh;
+  min-block-size: 668px;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: 667px;
+  grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
   margin-block-start: 40px;
   position: relative;
-}
-
-.footer::after {
-  content: '';
-  box-sizing: border-box;
-  inline-size: 25px;
-  block-size: 25px;
-  background-color: transparent;
-  border-top: 1px solid var(--color-1);
-  border-right: 1px solid var(--color-1);
-  position: absolute;
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
-}
-
-.footer::before {
-  content: '';
-  box-sizing: border-box;
-  inline-size: 25px;
-  block-size: 25px;
-  background-color: transparent;
-  border-bottom: 1px solid var(--color-1);
-  border-left: 1px solid var(--color-1);
-  position: absolute;
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
 }
 
 .focus_text {
@@ -342,26 +317,18 @@
     max-inline-size: 364px;
   }
 
-  .header::before {
+  .decorated-zone::before {
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
 
-  .header::after {
-    content: '';
-    inline-size: 25px;
-    block-size: 25px;
-    background-color: transparent;
-    border-bottom: 1px solid var(--color-1);
-    border-left: 1px solid var(--color-1);
-    position: absolute;
+  .decorated-zone::after {
     inset-block-end: 20px;
     inset-inline-start: 20px;
   }
 
   .main__content {
     --gap-l: 80px;
-    display: grid;
     gap: var(--gap-l);
     grid-template-columns: 1fr;
     margin-block-start: 60px;
@@ -377,7 +344,7 @@
     margin: 0;
   }
 
-  .one__column {
+  .distinguished__section {
     row-gap: 20px;
   }
 
@@ -394,7 +361,7 @@
     grid-column: 2/3;
   }
 
-  .one__column-title {
+  .distinguished__section-title {
     grid-column: 1/2;
     min-inline-size: 236px;
     text-wrap: wrap;
@@ -404,7 +371,7 @@
     margin-block-end: 10px;
   }
 
-  .one__column-list {
+  .distinguished__section-list {
     grid-column: 1/-1;
   }
 
@@ -455,38 +422,13 @@
   }
 
   .footer {
-    inline-size: 100%;
     margin-block-start: 60px;
-    grid-template-rows: 1024px;
+    min-block-size: 1024px;
   }
 
   .focus_text {
     --font-size-switch: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 6.1875rem;
-  }
-
-  .footer::after {
-    content: '';
-    inline-size: 25px;
-    block-size: 25px;
-    background-color: transparent;
-    border-top: 1px solid var(--color-1);
-    border-right: 1px solid var(--color-1);
-    position: absolute;
-    inset-inline-end: 20px;
-    inset-block-start: 20px;
-  }
-
-  .footer::before {
-    content: '';
-    inline-size: 25px;
-    block-size: 25px;
-    background-color: transparent;
-    border-bottom: 1px solid var(--color-1);
-    border-left: 1px solid var(--color-1);
-    position: absolute;
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
   }
 }
 
@@ -524,25 +466,11 @@
    
   }
 
-  .header::after {
-    content: '';
-    inline-size: 25px;
-    block-size: 25px;
-    background-color: transparent;
-    border-bottom: 1px solid var(--color-1);
-    border-left: 1px solid var(--color-1);
-    position: absolute;
-    inset-block-start: 723px;
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
-  }
-
   .content__section {
     grid-template-columns: minmax(315px, 1fr) minmax(649px, 1fr);
   }
 
-  .one__column-list {
-    display: grid;
+  .distinguished__section-list-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -555,11 +483,10 @@
   }
 
   .footer {
-    grid-template-rows: 768px;
+    min-block-size: 768px;
   }
 
   .focus_text {
-    --font-size-switch: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 8.096rem;
   }
 }

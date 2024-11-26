@@ -5,13 +5,13 @@
 
 :root {
   --background-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
   --font-size-m: 18px;
   --line-height-m: 1.125rem;
   --font-family: 'IBM Plex Mono', sans-serif;
-  --color-1: #ff0070;
+  --color-button: #ff0070;
   --color-text: #f1b2ce;
   --color-switch: #db00ff;
-  --color-2: #000028;
   --color-list-title: #000028;
   --line-height-l: 1.4625rem;
   --gap-m: 10px;

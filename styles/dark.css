@@ -11,22 +11,15 @@
   */
 
   --background-image: url(../images/cover-image-dark.png);
-  --font-size-m: 18px;
-  --line-height-m: 18px;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  --color-1: #ff0070;
+  --background-color: #000028;
+  --color-button: #ff0070;
   --color-text: #f1b2ce;
   --color-switch: #db00ff;
   --color-2: #000028;
   --color-list-title: #000028;
-  --line-height-l: 23.4px;
-  --gap-m: 10px;
-  --gap-l: 20px;
   --color-hover: #ff007066;
   --color-shadow: #ff0070;
   --color-link-shadow: #ff0070;
-  --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  
 }
 
 .page.theme_dark .decor__element {

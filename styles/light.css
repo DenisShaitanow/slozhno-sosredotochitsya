@@ -10,21 +10,14 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-  --font-size-m: 18px;
-  --line-height-m: 18px;
-  --font-family: 'IBM Plex Mono', sans-serif;
-  --color-1: #353430;
+  --background-color: #fff1f7;
+  --color-button: #353430;
   --color-text: #353430;
   --color-switch: #ffc2e6;
-  --color-2: #fff1f7;
   --color-list-title: #353430;
-  --line-height-l: 23.4px;
-  --gap-m: 10px;
-  --gap-l: 20px;
   --color-hover: #32312d66;
   --color-shadow: #ff8dcb;
   --color-link-shadow: #ff8dcb;
-  --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
 :root.theme-light {
@@ -44,21 +37,14 @@
   :root {
     /* Дублируем переменные светлой темы */
     --background-image: url(../images/cover-image-light.png);
-    --font-size-m: 18px;
-    --line-height-m: 18px;
-    --font-family: 'IBM Plex Mono', sans-serif;
-    --color-1: #353430;
+    --background-color: #fff1f7;
+    --color-button: #353430;
     --color-text: #353430;
     --color-switch: #ffc2e6;
-    --color-2: #fff1f7;
     --color-list-title: #353430;
-    --line-height-l: 23.4px;
-    --gap-m: 10px;
-    --gap-l: 20px;
     --color-hover: #32312d66;
     --color-shadow: #ff8dcb;
     --color-link-shadow: #ff8dcb;
-    --font-size-switch: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .decor__element {
