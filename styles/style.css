@@ -470,7 +470,8 @@
     grid-template-columns: minmax(315px, 1fr) minmax(649px, 1fr);
   }
 
-  .distinguished__section-list-list {
+  .distinguished__section-list {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
